@@ -2,7 +2,8 @@ server:
   port: 8080 #the default port used for zuul service
 
 zuul:
+  ignoredServices: '*'
   routes:
     echo-service:
-      path: /echo/**
+      path: /echo1/**
       url: http://localhost:8091
