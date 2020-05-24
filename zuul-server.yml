@@ -3,9 +3,6 @@ server:
 
 zuul:
   routes:
-    resource:
+    echo-service:
       path: /echo/**
-      url: http://localhost:8091/
-      stripPrefix: false
-      
-
+      url: http://localhost:8091
